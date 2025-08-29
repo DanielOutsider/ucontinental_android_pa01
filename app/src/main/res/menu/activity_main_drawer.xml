@@ -4,7 +4,7 @@
         <item android:id="@+id/acercaFragment"           android:title="Acerca de mí"/>
         <item android:id="@+id/trianguloFragment"        android:title="Área de triángulo"/>
         <item android:id="@+id/numeroAleatorioFragment"  android:title="Número aleatorio (6 cifras)"/>
-        <item android:id="@+id/binarioADecimalFragment"  android:title="Binario → Decimal"/>
-        <item android:id="@+id/hexaBinarioFragment"      android:title="Binario → Hexadecimal"/>
+        <item android:id="@+id/binarioADecimalFragment"  android:title="Binario a Decimal"/>
+        <item android:id="@+id/hexaBinarioFragment"      android:title="Binario a Hexadecimal"/>
     </group>
 </menu>

@@ -9,6 +9,6 @@
         android:id="@+id/txtDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido 👋\nAbre el menú (☰) y elige una opción."
+        android:text="Bienvenido a mi Aplicación Dchocano para el PA01."
         android:textAlignment="center"/>
 </FrameLayout>
