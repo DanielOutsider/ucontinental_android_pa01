@@ -24,7 +24,7 @@ public class MainActivity_principal extends AppCompatActivity {
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // OBTENER NavController DESDE EL FRAGMENT realmente presente en el layout
+        // OBTENER NavController DESDE EL FRAGMENT
         NavHostFragment navHostFragment =
                 (NavHostFragment) getSupportFragmentManager()
                         .findFragmentById(R.id.nav_host_fragment_content_main);
