@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binario → Decimal"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputBinario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa un número binario (solo 0 y 1)"
+            android:inputType="number"
+            android:digits="01"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnConvertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decimal: —"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- (Opcional) para mostrar un mensaje de error/ayuda -->
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B00020"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

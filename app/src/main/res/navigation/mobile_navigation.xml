@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="chocano.pa1.org.ui.dashboard.DashboardFragment"
+        android:label="@string/app_name" />
+
+    <fragment
+        android:id="@+id/acercaFragment"
+        android:name="chocano.pa1.org.ui.acerca.AcercaFragment"
+        android:label="Acerca de mí" />
+
+    <fragment
+        android:id="@+id/trianguloFragment"
+        android:name="chocano.pa1.org.ui.triangulo.TrianguloFragment"
+        android:label="Área de triángulo" />
+
+    <fragment
+        android:id="@+id/numeroAleatorioFragment"
+        android:name="chocano.pa1.org.ui.aleatorio.NumeroAleatorioFragment"
+        android:label="Número aleatorio" />
+
+    <fragment
+        android:id="@+id/binarioADecimalFragment"
+        android:name="chocano.pa1.org.ui.bindec.BinarioDecimalFragment"
+        android:label="Binario Decimal" />
+
+    <fragment
+        android:id="@+id/hexaBinarioFragment"
+        android:name="chocano.pa1.org.ui.hexbin.HexaBinarioFragment"
+        android:label="Binario Hexadecimal" />
+</navigation>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/bg_half_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Foto -->
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/daniel"
+            android:contentDescription="Mi foto"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_mask"
+            android:clipToOutline="true"/>
+
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daniel Francisco Chocano Jara"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Rol / subtítulo -->
+        <TextView
+            android:id="@+id/txtProfesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingeniero de Sistemas · Full-Stack Developer"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sección: Sobre mí -->
+        <TextView
+            android:id="@+id/titleSobreMi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sobre mí"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/txtSobreMi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apasionado por el desarrollo web y móvil, con foco en crear soluciones robustas y usables. Experiencia en frontend (Vue/React), backend (Laravel/Node) y DevOps (Linux/NGINX)."
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sección: Habilidades -->
+        <TextView
+            android:id="@+id/titleHabilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habilidades"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/txtHabilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Laravel, Node.js, Vue.js, React\n• MySQL, PostgreSQL, MongoDB\n• NGINX, Ubuntu Server, Docker\n• Scrum, Git, CI/CD"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sección: Contacto -->
+        <TextView
+            android:id="@+id/titleContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contacto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/txtContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contacto"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColorLink="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+</ScrollView>

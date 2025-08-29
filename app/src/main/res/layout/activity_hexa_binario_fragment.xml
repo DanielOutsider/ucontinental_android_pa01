@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hexadecimal → Binario"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputHex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa un número en base 16 (0-9, A-F)"
+            android:inputType="textCapCharacters"
+            android:digits="0123456789ABCDEFabcdef"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnConvertirHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
+
+        <TextView
+            android:id="@+id/txtBinarioPadded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binario (4 bits por dígito): —"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtBinarioTrimmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binario (sin ceros a la izquierda): —"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtMensajeHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B00020"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

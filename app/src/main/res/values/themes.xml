@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema principal -->
+    <style name="Theme.Chocano_pa1" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="android:windowBackground">@color/background</item>
+
+        <!-- Estilo global para la Toolbar -->
+        <item name="toolbarStyle">@style/Widget.Chocano.Toolbar</item>
+    </style>
+
+    <!-- Tema para Splash (sin ActionBar) -->
+    <style name="Theme.Chocano_pa1.Splash" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Estilo reutilizable para contenedores de pantalla -->
+    <style name="ScreenContainer">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <!-- Estilo de Toolbar seguro con Material3 -->
+    <style name="Widget.Chocano.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextColor">?attr/colorOnPrimary</item>
+        <item name="subtitleTextColor">?attr/colorOnPrimary</item>
+        <item name="navigationIconTint">?attr/colorOnPrimary</item>
+        <!-- Overlay para que íconos de menú/overflow usen colorOnPrimary -->
+        <item name="android:theme">@style/ThemeOverlay.Chocano.ToolbarIcons</item>
+    </style>
+
+    <!-- ✅ Overlay BASE (faltaba y generaba el error) -->
+    <style name="ThemeOverlay.Chocano" parent="" />
+
+    <!-- Overlay para íconos del menú/overflow de la Toolbar -->
+    <style name="ThemeOverlay.Chocano.ToolbarIcons" parent="ThemeOverlay.Chocano">
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+        <item name="colorControlHighlight">?attr/colorOnPrimary</item>
+        <item name="android:textColorSecondary">?attr/colorOnPrimary</item>
+    </style>
+
+</resources>
